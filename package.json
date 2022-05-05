@@ -2,7 +2,7 @@
   "name": "play-djmax",
   "displayName": "Play DJMAX",
   "description": "Play the music from DJMAX archive",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "minwook-shin",
   "author": {
     "name": "minwook-shin"
@@ -15,7 +15,10 @@
     "type": "git",
     "url": "https://github.com/minwook-shin/vscode-play-djmax.git"
   },
-  "keywords":["djmax", "youtube"],
+  "keywords": [
+    "djmax",
+    "youtube"
+  ],
   "engines": {
     "vscode": "^1.31.0"
   },
@@ -31,6 +34,13 @@
       {
         "command": "djmax.playlist",
         "title": "DJMAX: Show YouTube Playlist"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "djmax.playlist",
+        "key": "ctrl+d ctrl+j",
+        "mac": "cmd+d cmd+j"
       }
     ]
   },
