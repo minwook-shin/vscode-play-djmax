@@ -2,7 +2,7 @@
   "name": "play-djmax",
   "displayName": "Play DJMAX",
   "description": "Play the music from DJMAX archive",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "publisher": "minwook-shin",
   "author": {
     "name": "minwook-shin"
@@ -23,12 +23,14 @@
     "vscode": "^1.31.0"
   },
   "categories": [
+    "Themes",
     "Other"
   ],
   "activationEvents": [
     "onCommand:djmax.playlist"
   ],
   "main": "./extension.js",
+  "browser": "./extension.js",
   "contributes": {
     "commands": [
       {
@@ -41,6 +43,18 @@
         "command": "djmax.playlist",
         "key": "ctrl+d ctrl+j",
         "mac": "cmd+d cmd+j"
+      }
+    ],
+    "themes": [
+      {
+        "label": "DJMAX-dark",
+        "uiTheme": "vs-dark",
+        "path": "vscode-djmax-dark-color-theme.json"
+      },
+      {
+        "label": "DJMAX-white",
+        "uiTheme": "vs",
+        "path": "vscode-djmax-white-color-theme.json"
       }
     ]
   },
